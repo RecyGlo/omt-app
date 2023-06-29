@@ -1,6 +1,6 @@
-// const baseUrl = "https://api.ohmytrash.com"
+const baseUrl = "https://api.ohmytrash.co"
 // const baseUrl = "http://192.168.1.3:3000"
-const baseUrl = "http://localhost:3000"
+// const baseUrl = "http://localhost:3000"
 
 const one_signal_id = "24076781-f30d-4725-9e06-d5d8aaf9563a";
 
