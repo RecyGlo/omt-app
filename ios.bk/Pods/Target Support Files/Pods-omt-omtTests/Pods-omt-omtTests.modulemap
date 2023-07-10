@@ -1,6 +1,0 @@
-module Pods_omt_omtTests {
-  umbrella header "Pods-omt-omtTests-umbrella.h"
-
-  export *
-  module * { export * }
-}

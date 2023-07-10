@@ -13,7 +13,7 @@ import {
 
 const windowHeight = Dimensions.get('window').height;
 
-import QRCodeScanner from 'react-native-qrcode-scanner';
+// import QRCodeScanner from 'react-native-qrcode-scanner';
 // import { RNCamera } from 'react-native-camera';
 
 import {firebase} from '@react-native-firebase/database';
@@ -68,24 +68,25 @@ class ScanScreen extends Component {
   };
   render() {
     return (
-      <QRCodeScanner
-        // containerStyle={{ paddingTop: 100 }}
-        cameraStyle={{height: windowHeight - 130}}
-        onRead={this.onSuccess}
-        topViewStyle={{height: 0, flex: 0, zIndex: 1}}
-        bottomViewStyle={{height: 0, flex: 0, zIndex: 0}}
-        // flashMode={RNCamera.Constants.FlashMode.torch}
-        // topContent={
-        //   <TouchableOpacity style={styles.buttonTouchable}>
-        //     <Text style={styles.buttonText}>Top</Text>
-        //   </TouchableOpacity>
-        // }
-        bottomContent={
-          <TouchableOpacity style={styles.buttonTouchable}>
-            <Text style={styles.buttonText}>Scanning ...</Text>
-          </TouchableOpacity>
-        }
-      />
+        <Text>QR Code Scanner</Text>
+      // <QRCodeScanner
+      //   // containerStyle={{ paddingTop: 100 }}
+      //   cameraStyle={{height: windowHeight - 130}}
+      //   onRead={this.onSuccess}
+      //   topViewStyle={{height: 0, flex: 0, zIndex: 1}}
+      //   bottomViewStyle={{height: 0, flex: 0, zIndex: 0}}
+      //   // flashMode={RNCamera.Constants.FlashMode.torch}
+      //   // topContent={
+      //   //   <TouchableOpacity style={styles.buttonTouchable}>
+      //   //     <Text style={styles.buttonText}>Top</Text>
+      //   //   </TouchableOpacity>
+      //   // }
+      //   bottomContent={
+      //     <TouchableOpacity style={styles.buttonTouchable}>
+      //       <Text style={styles.buttonText}>Scanning ...</Text>
+      //     </TouchableOpacity>
+      //   }
+      // />
     );
   }
 }

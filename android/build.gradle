@@ -2,23 +2,21 @@
 
 buildscript {
     ext {
-        buildToolsVersion = "29.0.2"
+        buildToolsVersion = "33.0.0"
         minSdkVersion = 21
-        compileSdkVersion = 29
-        targetSdkVersion = 29
-        // supportLibVersion = "xxx"
-        playServicesVersion = "17.0.0" // or find latest version
-        // androidMapsUtilsVersion = "xxx"
+        compileSdkVersion = 33
+        targetSdkVersion = 33
+
+        // We use NDK 23 which has both M1 support and is the side-by-side NDK version from AGP.
+        ndkVersion = "23.1.7779620"
     }
     repositories {
         google()
-        jcenter()
+        mavenCentral()
     }
     dependencies {
         classpath("com.android.tools.build:gradle:3.5.3")
-        classpath 'com.google.gms:google-services:4.3.3'
-        // NOTE: Do not place your application dependencies here; they belong
-        // in the individual module build.gradle files
+        classpath("com.facebook.react:react-native-gradle-plugin")
     }
 }
 

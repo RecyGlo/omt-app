@@ -19,7 +19,7 @@ import {
     TouchableHighlight
 } from 'react-native';
 import Icon from "react-native-vector-icons/Ionicons";
-import { GoogleSignin, GoogleSigninButton, statusCodes } from '@react-native-community/google-signin';
+import { GoogleSignin, GoogleSigninButton, statusCodes } from '@react-native-google-signin/google-signin';
 import appleAuth, { AppleAuthError, AppleAuthRequestScope, AppleAuthRequestOperation, AppleButton } from '@invertase/react-native-apple-authentication';
 import CountryPicker from 'react-native-country-picker-modal';
 import auth from '@react-native-firebase/auth';
@@ -718,7 +718,6 @@ let styles = StyleSheet.create({
         justifyContent: 'center'
     },
     loginTxt: {
-        color: "#FFFFFF",
         fontWeight: 'bold',
         fontSize: 18,
         color: '#FFEB3B'
@@ -752,4 +751,3 @@ let styles = StyleSheet.create({
         height: 60
     }
 });
-
